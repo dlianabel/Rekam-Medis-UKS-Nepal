@@ -14,7 +14,6 @@
 <br>
 <br>
 
----
 
 ## 📌 Fitur Utama
 - Menginput-output data pengguna (dokter / pemeriksa / petugas)
@@ -24,7 +23,6 @@
 - Menyimpan data pemeriksaan pasien
 - Mencetak hasil pemeriksaan
 <br>
----
 
 ## 🛠️ Teknologi yang Digunakan
 - Visual Basic 6.0
