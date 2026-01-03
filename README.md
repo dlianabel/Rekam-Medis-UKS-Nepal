@@ -15,7 +15,7 @@
 <br>
 
 
-## 📌 Fitur Utama
+## Fitur Utama
 - Menginput-output data pengguna (dokter / pemeriksa / petugas)
 - Menginput-output data obat
 - Menginput-output data pasien
@@ -24,7 +24,7 @@
 - Mencetak hasil pemeriksaan
 <br>
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 - Visual Basic 6.0
 - Microsoft Accsess
 - Microsoft Word
@@ -32,7 +32,7 @@
 - PixelLab
 <br>
 
-##  Kritik dari Pak Devita 
+## Kritik dari Pak Devita 
 <p align="justify">Meski terlihat seperti sudah siap pakai, nyatanya aplikasi ini masih memiliki banyak kekurangan. Awalnya aku merasa proyek ini memiliki potensi untuk menjadi sesuatu untuk dunia ini, meski hanya dalam lingkup sekolahku. Aku merasa mungkin aku bisa memberi dampak bagi sekolahku sendiri. Bahkan, petugas UKS memberiku banyak masukkan dan dukungan yang sangat baik kepadaku. Hingga pada suatu hari, ia memintaku untuk mencoba mempresentasikannya ke guru mata pelajaran kejuruanku. Aku pun mencobanya, aku memilih Pak Devita karena memang beliaulah yang sebelumnya memberi tugas praktik merancang aplikasi yang bisa digunakan untuk masyarakat. Ceritanya mau balas dendam, soale tugas tersebut gagal karena keterbatasan waktu, pengetahuan, dan perangkat yang lebih kompleks. Tugas tersebut menggunakan Visual Basic Net kalau tidak salah, sedangkan proyek yang aku kerjakan ini adalah Visual Basic 6.0, lebih jadul dan lebih sederhana dalam proses pembuatannya. Sifat angkuh membutakan pandanganku, berpikir bahwa proyek ini sangat bagus, dan sampai terpikir untuk mendapatkan cuan hanya dengan bermodalkan pengetahuan yang didapat dalam waktu singkat (masa PKL). Tanggapan Pak Devita banyak menampar diriku. Berikut kritikan-kritikan yang didberikan Pak Devita terhadap proyek ini.</p>
 
 - Tampilan sebaiknya bisa fullscreen
