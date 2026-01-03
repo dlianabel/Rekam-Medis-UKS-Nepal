@@ -1,0 +1,42 @@
+    Dim xlApp As Object
+    Dim xlWorkbook As Object
+    Dim xlWorksheet As Object
+    Dim i As Integer
+    Dim j As Integer
+
+    ' Membuat instance baru Excel
+    Set xlApp = CreateObject("Excel.Application")
+    xlApp.Visible = True
+
+    ' Menambahkan workbook baru
+    Set xlWorkbook = xlApp.Workbooks.Add
+    Set xlWorksheet = xlWorkbook.Sheets(1)
+
+    ' Menyalin header dari ADODC
+    For i = 1 To ADODC1.Recordset.Fields.Count
+        xlWorksheet.Cells(1, i).Value = ADODC1.Recordset.Fields(i - 1).Name
+    Next i
+
+    ' Menyalin data dari ADODC ke Excel
+    ADODC1.Recordset.MoveFirst
+    Dim row As Integer
+    row = 2 ' Mulai dari baris kedua
+    Do While Not ADODC1.Recordset.EOF
+        For j = 1 To ADODC1.Recordset.Fields.Count
+            xlWorksheet.Cells(row, j).Value = ADODC1.Recordset.Fields(j - 1).Value
+        Next j
+        ADODC1.Recordset.MoveNext
+        row = row + 1
+    Loop
+
+    ' Menyimpan workbook
+    xlWorkbook.SaveAs "C:\backup_data.xlsx" ' Ganti dengan path yang diinginkan
+    xlWorkbook.Close
+    xlApp.Quit
+
+    ' Membersihkan objek
+    Set xlWorksheet = Nothing
+    Set xlWorkbook = Nothing
+    Set xlApp = Nothing
+
+    MsgBox "Backup ke Excel selesai!"

@@ -1,0 +1,80 @@
+    On Error GoTo ErrorHandler
+    
+    ' Simpan current directory sebelum CommonDialog dibuka
+    Dim currentDir As String
+    currentDir = CurDir$
+
+    If tbobatBTN.Caption = "TABEL OBAT" Then
+        kosong
+        btnsemula
+        DataGrid2.Visible = True
+        tbobatBTN.Caption = "(BACKUP) TABEL OBAT"
+    Else
+        tbobatBTN.Caption = "TABEL OBAT"
+        With Adodc2.Recordset
+            respons = MsgBox("Ingin mengekspor tabel ke Excel?", vbOKCancel)
+            If respons = vbOK Then
+                Dim xlApp As Object
+                Dim xlWorkbook As Object
+                Dim xlWorksheet As Object
+                Dim folderPath As String
+                Dim currentDate As String
+
+                Set xlApp = CreateObject("Excel.Application")
+                Set xlWorkbook = xlApp.Workbooks.Add
+                Set xlWorksheet = xlWorkbook.Sheets(1)
+
+                currentDate = Format(Now, "dd-mm-yyyy")
+                CommonDialog1.DialogTitle = "Pilih Lokasi untuk Menyimpan"
+                CommonDialog1.FileName = "Tabel Obat (Rekam Medis) " & currentDate & ".xlsx"
+                CommonDialog1.ShowSave
+                folderPath = CommonDialog1.FileName
+
+                ' Tambahkan validasi jika pengguna membatalkan dialog save
+                If folderPath = "" Then
+                    MsgBox "Penyimpanan dibatalkan."
+                    Exit Sub
+                End If
+
+                If Right(folderPath, 5) <> ".xlsx" Then
+                    folderPath = folderPath & ".xlsx"
+                End If
+
+                ' Ekspor data ke Excel
+                For i = 1 To .Fields.Count
+                    xlWorksheet.Cells(1, i).Value = .Fields(i - 1).Name
+                Next i
+
+                .MoveFirst
+                Row = 2
+                Do While Not .EOF
+                    For j = 1 To .Fields.Count
+                        xlWorksheet.Cells(Row, j).Value = .Fields(j - 1).Value
+                    Next j
+                    .MoveNext
+                    Row = Row + 1
+                Loop
+
+                xlWorkbook.SaveAs folderPath
+                xlWorkbook.Close
+                xlApp.Quit
+
+                Set xlWorksheet = Nothing
+                Set xlWorkbook = Nothing
+                Set xlApp = Nothing
+
+                MsgBox "Tabel berhasil diekspor ke Excel!"
+            End If
+        End With
+    End If
+
+    ' Kembalikan current directory ke kondisi semula
+    ChDrive currentDir
+    ChDir currentDir
+
+    jmldataTX.Text = Adodc2.Recordset.RecordCount & " Data"
+    Exit Sub
+
+ErrorHandler:
+    MsgBox "Terjadi kesalahan: " & Err.Description
+    Resume Next

@@ -1,0 +1,166 @@
+[Root]
+Most Recent Package=rekam medis
+
+
+[Package|rekam medis|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)
+
+[Package|rekam medis|Configure DAO ISAMs]
+Applicable=No
+
+[Package|rekam medis|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|rekam medis|Files Found]
+dbrekam_medis.mdb=D:\Rekam Medis oleh Nabil v2\dbrekam_medis.mdb
+
+[Package|rekam medis|Files Released]
+
+[Package|rekam medis|Missing Dependency Information]
+C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE=
+
+[Package|rekam medis|Out-of-Date Dependency Information]
+C:\Windows\SysWOW64\COMCT332.OCX=
+
+[Package|rekam medis|Files Added]
+d:\rekam medis oleh nabil v2\dbrekam_medis.mdb=
+
+[Package|rekam medis|Files Removed]
+
+[Package|rekam medis|Files In Project]
+C:\Windows\System32\msvbvm60.dll=Yes
+C:\Windows\System32\oleaut32.dll=Yes
+C:\Windows\System32\olepro32.dll=Yes
+C:\Windows\System32\asycfilt.dll=Yes
+C:\Windows\System32\stdole2.tlb=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\Windows\SysWOW64\MSRDC20.OCX=Yes
+C:\Windows\SysWOW64\MSRDO20.DLL=Yes
+C:\Windows\SysWOW64\RDOCURS.DLL=Yes
+C:\Windows\SysWOW64\TABCTL32.OCX=Yes
+C:\Windows\SysWOW64\MSFLXGRD.OCX=Yes
+C:\Windows\SysWOW64\COMDLG32.OCX=Yes
+C:\Windows\SysWOW64\MSCOMCTL.OCX=Yes
+C:\Windows\SysWOW64\MSCOMCT2.OCX=Yes
+C:\Windows\SysWOW64\MSINET.OCX=Yes
+C:\Windows\SysWOW64\RICHTX32.OCX=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+C:\Windows\SysWOW64\MSCHRT20.OCX=Yes
+C:\Windows\SysWOW64\MSWINSCK.OCX=Yes
+C:\Windows\SysWOW64\MSMAPI32.OCX=Yes
+C:\Windows\SysWOW64\MCI32.OCX=Yes
+C:\Windows\SysWOW64\PICCLP32.OCX=Yes
+C:\Windows\SysWOW64\SYSINFO.OCX=Yes
+C:\Windows\SysWOW64\MSCOMM32.OCX=Yes
+C:\Windows\SysWOW64\MSMASK32.OCX=Yes
+C:\Windows\SysWOW64\MSDATGRD.OCX=Yes
+C:\Windows\SysWOW64\MSSTDFMT.DLL=Yes
+C:\Windows\SysWOW64\MSDATLST.OCX=Yes
+C:\Windows\SysWOW64\COMCT332.OCX=Yes
+C:\Windows\SysWOW64\MSADODC.OCX=Yes
+C:\Windows\SysWOW64\MSHFLXGD.OCX=Yes
+C:\Windows\SysWOW64\MSBIND.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\Windows\System32\VB6STKIT.DLL=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+C:\Windows\SysWOW64\Ani Gif.ocx=Yes
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=Yes
+C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE=Yes
+D:\Rekam Medis oleh Nabil v2\dbrekam_medis.mdb=Yes
+D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)\UKS.exe=Yes
+
+[Package|rekam medis|Configure Registry Files]
+Applicable=No
+
+[Package|rekam medis|Configure Remote Servers]
+Applicable=No
+
+[Package|rekam medis|Install Locations]
+D:\Rekam Medis oleh Nabil\instalasi app uks\UKS.exe=$(AppPath)
+C:\Windows\System32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\Windows\System32\oleaut32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\olepro32.dll=$(WinSysPathSysFile)
+C:\Windows\System32\asycfilt.dll=$(WinSysPathSysFile)
+C:\Windows\System32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\MSRDC20.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSRDO20.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\RDOCURS.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\TABCTL32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSFLXGRD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\COMDLG32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMCTL.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMCT2.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSINET.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\RICHTX32.OCX=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+C:\Windows\SysWOW64\MSCHRT20.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSWINSCK.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSMAPI32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MCI32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\PICCLP32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\SYSINFO.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSCOMM32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSMASK32.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATGRD.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSSTDFMT.DLL=$(WinSysPath)
+C:\Windows\SysWOW64\MSDATLST.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\COMCT332.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSADODC.OCX=$(WinSysPath)
+C:\Windows\SysWOW64\MSHFLXGD.OCX=$(WinSysPath)
+D:\Ani Gif.ocx=$(WinSysPath)
+C:\Windows\SysWOW64\MSBIND.DLL=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\Windows\System32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Rekam Medis oleh Nabil\dbrekam_medis.mdb=$(AppPath)
+C:\Windows\SysWOW64\Ani Gif.ocx=$(WinSysPath)
+D:\Rekam Medis oleh Nabil\instalasi app uks (1.3.3)\UKS.exe=$(AppPath)
+D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.0)\UKS.exe=$(AppPath)
+C:\Program Files (x86)\Common Files\System\ado\msado20.tlb=$(WinSysPath)
+C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE=$(AppPath)
+D:\Rekam Medis oleh Nabil v2\dbrekam_medis.mdb=$(AppPath)
+D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)\UKS.exe=$(AppPath)
+
+[Package|rekam medis|Configure Shared Files]
+Applicable=Yes
+D:\Rekam Medis oleh Nabil\instalasi app uks\UKS.exe=Yes
+C:\Program Files (x86)\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+D:\Rekam Medis oleh Nabil\dbrekam_medis.mdb=Yes
+D:\Rekam Medis oleh Nabil\instalasi app uks (1.3.3)\UKS.exe=Yes
+D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.0)\UKS.exe=Yes
+C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE=Yes
+D:\Rekam Medis oleh Nabil v2\dbrekam_medis.mdb=Yes
+D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)\UKS.exe=Yes
+
+[Package|rekam medis|Distribution]
+Type=single
+Size=
+Title=App Rekam Medis oleh Dlianabil
+
+[Package|rekam medis|IconGroups]
+Group0=UKS
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|rekam medis|UKS]
+Icon1=UKS.exe
+Title1=UKS
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|rekam medis|Package]
+PackageFolder=D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)
+ProjectFolder=D:\Rekam Medis oleh Nabil v2
+ServerSideCab=
+File1=D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)\setup.exe
+File2=D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)\Setup.Lst
+File3=D:\Rekam Medis oleh Nabil v2\instalasi app uks (2.1)\UKS.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
